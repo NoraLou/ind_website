@@ -1,0 +1,106 @@
+body {
+  background-color: #ECD078;
+  -webkit-transition: background-color 0.8s ease-out;
+  transition: background-color 0.8s ease-out;
+}
+
+.parent {
+  background-color: transparent;
+  height: 100%;
+  margin: 50px;
+}
+
+nav{
+  background-color: #fff;
+  height: 100px;
+}
+
+.nav-container{
+  padding:20px;
+}
+
+/*.my-main-nav{
+  margin-right: 20px;
+  padding-top: 20px;
+}*/
+
+.my-social-nav{
+  margin-left: 20px;
+  /*padding-top: 20px;*/
+}
+
+.my-main-nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.my-social-nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.my-social-nav img{
+  width: 25px;
+}
+
+
+
+.box {
+  width: 700px;
+  height: 500px;
+  color: #666;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+  margin-bottom: 50px;
+  /*text-transform: uppercase;
+  letter-spacing: 3px;*/
+}
+
+
+
+
+
+/*.box {
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}*/
+
+.magnolia {
+  background-color: #ECD078;
+}
+
+[data-color="#ECD078"] > span {
+  color: #ECD078;
+}
+
+.brick {
+  background-color: #D95B43;
+}
+
+[data-color="#D95B43"] > span {
+  color: #D95B43;
+}
+
+.claret {
+  background-color: #542437;
+}
+
+[data-color="#542437"] > span {
+  color: #542437;
+}
+
+.plumage {
+  background-color: #53777A;
+}
+
+[data-color="#53777A"] > span {
+  color: #53777A;
+}
