@@ -2,3 +2,5 @@ git
 source/
 index.js
 scrollMonitor.js
+img/
+.DS_Store
