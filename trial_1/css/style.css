@@ -1,8 +1,12 @@
 body {
- /* background-color: #000;*/
+  background-color: black;
   -webkit-transition: background-color 0.8s ease-out;
   transition: background-color 0.8s ease-out;
   font-family: font-family: 'Open-Sans', sans-serif;
+}
+
+.header{
+  background-color: black;
 }
 
 .parent {
@@ -12,8 +16,12 @@ body {
   margin-top: 0px;
 }
 
-.my-master-nav{
-  background-color: #000;
+
+.navbar-default{
+  background-color: black;
+  width:100%;
+  position:fixed;
+  z-index:3;
 }
 
 
@@ -58,6 +66,9 @@ body {
   width: 200px;
 }
 
+.anchor{
+  height: 80px;
+}
 
 .box-intro{
   text-align: center;
@@ -218,3 +229,54 @@ body {
 
 
 /***********************CHANGE CONTENT PADDING ON IPHONE WINDOWS PHONE*/
+
+Notes:
+
+-change box content padding on mobile.  delete parent
+
+- remove z-index on  mobile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
