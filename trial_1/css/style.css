@@ -36,6 +36,11 @@ nav{
   color:#34ADD4;
 }
 
+a {
+  color: inherit;
+
+}
+
 .my-main-nav>li{
   color:#34ADD4;
 }
@@ -97,8 +102,8 @@ nav{
 }
 
 #a-little-about-me{
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
   padding-top: 20px;
 }
 
@@ -117,38 +122,62 @@ nav{
   font-size:14px;
 }
 
-.cv-wrapper{
-  margin-right: 50px;
-  margin-left: 50px;
-}
 
 .cv-section-head{
   text-transform: uppercase;
   color:#000;
   letter-spacing: 3px;
   padding-bottom: 20px;
- /* text-align: center;*/
 }
 
-./*cv-details {
-  color: tomato;
-  margin-top: 7px;
-  text-align: left;
-  font-weight: 300;
-  font-size:14px;
-  line-height: 50px !important;
+.cv-row{
+  padding-right: 40px;
+  padding-left: 40px;
+}
 
-}*/
-
-.cv-details>p{
-  line-height: 50px !important;
+.job-title{
+  color:#000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  /*text-align: center;*/
+  /*line-height: 2;*/
 }
 
 
 
+.col-md-8 h3{
+  padding-left: 30px;
+}
 
+.job-bullets{
+  list-style: square inside none;
 
+  margin-left:none;
+  padding-left: none;
+}
 
+.job-bullets li{
+  margin-left:none;
+  padding-left: none;
+  padding-top: 5px;
+}
+
+.employer-title{
+
+  color:#000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+}
+
+.cv-row:last-of-type{
+  margin-bottom: 70px;
+
+}
 
 
 
@@ -161,21 +190,8 @@ nav{
   background: #fff;
   box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
   margin-bottom: 50px;
-  /*text-transform: uppercase;
-  letter-spacing: 3px;*/
 }
 
-
-
-
-
-/*.box {
-  background: #fff;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.4);
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}*/
 
 .magnolia {
   background-color: #ECD078;
@@ -208,3 +224,7 @@ nav{
 [data-color="#53777A"] > span {
   color: #53777A;
 }
+
+
+
+/***********************CHANGE CONTENT PADDING ON IPHONE WINDOWS PHONE*/
