@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+ /* background-color: #000;*/
   -webkit-transition: background-color 0.8s ease-out;
   transition: background-color 0.8s ease-out;
   font-family: font-family: 'Open-Sans', sans-serif;
@@ -16,7 +16,7 @@ body {
 nav{
  /* background-color: #000;*/
  /* background:rgb()*/
-  background:rgba(19,28,33,.5);
+  /*background:rgba(19,28,33,.5);*/
   height: 100px;
 }
 
