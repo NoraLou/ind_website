@@ -12,8 +12,9 @@ body {
 .parent {
   background-color: transparent;
   height: 100%;
+  width:90%;
   margin:5%;
-  /*margin: 50px;*/
+ /* margin: 50px;*/
   margin-top: 0px;
 }
 
@@ -204,6 +205,8 @@ body {
 
 .container {
   max-width: 1280px;
+  width:95%;
+
   padding: 40px 180px;
   background-color: #fff;
 
@@ -216,12 +219,15 @@ body {
 figure.effect {
  /* background-color: #0000;*/
   color: #6d2b46;
+  max-width: 391px;
+  display:block;
+  margin:auto;
 }
 
 figure.effect img {
-  /*width: -webkit-calc(100% );
-  width: calc(100% );*/
+
   max-width: 100%;
+  margin-top: 5%;
 
   -webkit-transition: opacity 0.35s; /*-webkit-transform 0.35s;*/
   transition: opacity 0.35s; /*transform 0.35s;*/
