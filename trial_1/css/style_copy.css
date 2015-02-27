@@ -183,6 +183,7 @@ body {
 }
 
 .box {
+  max-width: 1280px;
   width: 95%;
   min-height: 500px;
   color: #666;
@@ -195,122 +196,65 @@ body {
 
 
 /************************************************________PROJECTS SECTION*/
-/*
-.container{
- max-width: 1100px;
- padding: 90px;
- postion:relative;
 
-}*/
 
 .container {
   max-width: 1280px;
   width:95%;
-
   padding: 40px 180px;
   background-color: #fff;
 
 }
 
-.project-row{
+img {
+max-width: 100%;
+/*-webkit-transition: opacity 0.35s;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;*/
+}
 
+
+.mask {
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: #781155;
+  color:#fff;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.mask:hover{
+  opacity:1;
 }
 
 figure.effect {
- /* background-color: #0000;*/
+  position:relative;
   color: #6d2b46;
   max-width: 391px;
   display:block;
   margin:auto;
-}
-
-figure.effect img {
-
-  max-width: 100%;
   margin-top: 5%;
 
-  -webkit-transition: opacity 0.35s; /*-webkit-transform 0.35s;*/
-  transition: opacity 0.35s; /*transform 0.35s;*/
- /* -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);*/
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 figure.effect:hover img{
-  opacity: 0.1;
- /* -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);*/
+  opacity: 0.05;
+  border: solid 5px;
 }
 
-/*figure.effect figcaption {
-  text-align: left;
-}
 
-figure.effect h3 {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 20px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
 
-figure.effect:hover h3 {
-  opacity: 1;
-}
 
-figure.effect h3::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
 
-figure.effect:hover h3::after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect p {
-  padding-top: 10px;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-
-figure.effect:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.project-row:last-of-type{
-  margin-bottom: 40px;
-}*/
 
 
 
 
 /*********************************************__________PROJECT- HOVER-EFFECT*/
-
-
-
-
-
-
-
-
-
 
 
 
