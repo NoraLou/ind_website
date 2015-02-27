@@ -12,7 +12,8 @@ body {
 .parent {
   background-color: transparent;
   height: 100%;
-  margin: 50px;
+  margin:5%;
+  /*margin: 50px;*/
   margin-top: 0px;
 }
 
@@ -193,12 +194,24 @@ body {
 
 
 /************************************************________PROJECTS SECTION*/
-
+/*
 .container{
- max-width: 1280px;
- padding: 40px 180px;
+ max-width: 1100px;
+ padding: 90px;
+ postion:relative;
+
+}*/
+
+.container {
+  max-width: 1280px;
+  padding: 40px 180px;
+  background-color: #fff;
+
 }
 
+.project-row{
+
+}
 
 figure.effect {
  /* background-color: #0000;*/
@@ -206,8 +219,10 @@ figure.effect {
 }
 
 figure.effect img {
-  width: -webkit-calc(100% + 20px);
-  width: calc(100% + 20px);
+  /*width: -webkit-calc(100% );
+  width: calc(100% );*/
+  max-width: 100%;
+
   -webkit-transition: opacity 0.35s; /*-webkit-transform 0.35s;*/
   transition: opacity 0.35s; /*transform 0.35s;*/
  /* -webkit-transform: translate3d(-10px,0,0);
