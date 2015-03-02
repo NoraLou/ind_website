@@ -213,6 +213,13 @@ max-width: 100%;
 backface-visibility: hidden;*/
 }
 
+.description{
+ /* max-width: 100%;*/
+  max-height: 288px;
+  max-width: 391;
+  /*display: inline-block;*/
+  border: solid black 2px;
+}
 
 .mask {
   opacity:0;
@@ -245,14 +252,6 @@ figure.effect:hover img{
   opacity: 0.05;
   border: solid 5px;
 }
-
-
-
-
-
-
-
-
 
 /*********************************************__________PROJECT- HOVER-EFFECT*/
 
