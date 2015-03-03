@@ -1,3 +1,10 @@
+var frontPage = function (){
+
+
+}
+
+
+
 var Dymtro = (function () {
 
   var api = {};
@@ -6,7 +13,7 @@ var Dymtro = (function () {
   var currentColor = null;
 
   api.init = function() {
-    $boxes = document.querySelectorAll( '.box' );
+    $boxes = document.querySelectorAll( '.box-intro' );
 
     for (var i = 0; i < $boxes.length; i++) {
       watchers.push = api.createWatcher( $boxes[i] );
@@ -23,7 +30,7 @@ var Dymtro = (function () {
         return
       } else if (currentColor !== elementColor) {
         currentColor = elementColor;
-        api.changeBodyClass();
+        requestAnimationFrame( api.changeBodyClass() );
       }
     });
   };

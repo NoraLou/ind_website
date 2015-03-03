@@ -45,16 +45,18 @@
 </header>
 
 <div class="parent">
-    <div class = "anchor" id = "home"></div>
-    <div class="box" id ="logo-box" data-color="#000" >
+    <div class = "box-intro" id = "home" data-color="#000"></div>
+    <div class="box" id ="logo-box">
+   <!--  <div class = "box-intro" data-color="#000">
+    </div> -->
       <img id = "sample-logo" src ="img/Logo Example.png">
-    </div>
+  </div>
 
   <div class = "anchor" id ="say-hi"></div>
-   <div class="box" id = "purple" data-color="#3333B3">
+   <div class="box" id = "purple">
       <div class="container-fluid">
 
-        <div class = "box-intro">
+        <div class = "box-intro" data-color="#3333B3">
         <h1 class = "section-heading">Nora Humpage</h1>
         <p class = "grey-line-heading">software engineer. art nerd. perpetual learner.</p>
           <div class = "hr"></div>
@@ -104,7 +106,13 @@
           </div> <!-- col-md-6 -->
 
           <div class="col-md-6">
-            <p class = "skill-list">hi, im nora. an artist-turned web-developer currently residing in Oakland.  I love structure and order but strive to nest it in a createive package.  Also, I enjoy working in a team. You learn faster; learn more; and have more fun.  I am currently employment seeking opportunities.I ideally, I want to flexing my analytic mind and creative eye all at once.</p>
+            <p class = "about-me-intro" >hi, im nora<br>
+            a web-developer currently residing in Oakland<br>
+            lover of puzzles and placing logic in a creative package<br>
+            software engineer and art nerd<br>
+            background in visual design and technical support<br>
+            teamplayer (you learn more, learn faster, and have more fun)<br>
+            lives and thrives in a state of constant learning <br>
           </div><!-- col-md-6 -->
 
         </div><!-- row -->
@@ -114,9 +122,9 @@
 
 
   <div class = "anchor" id ="professional-me"></div>
-    <div class="box" data-color="#D95B43">
+    <div class="box">
       <div class="container-fluid">
-      <div class="box-intro">
+      <div class="box-intro" data-color="#D95B43">
         <h1 class = "section-heading">Experience</h1>
           <div class = "hr"></div>
       </div>
@@ -156,7 +164,6 @@
             <div class="col-md-8">
               <h3 class="job-title">Freelance, Oakland CA</h3>
               <ul class = "job-bullets">
-                <li>Clients Include: Kovalchuk DDS, Tranmissions Theatre, Upholstery Ensemble</li>
                 <li>I develop custom mobile-responsive websites, design and produce graphic assets</li>
               </ul>
             </div><!-- col-md-8 -->
@@ -224,11 +231,10 @@
 
 
     <div class="anchor" id = "projects"></div>
-    <!-- <div class="box" data-color="#542437"> -->
-     <div class = "box" data-color= "#542437">
+     <div class = "box">
         <div class = "container">
 
-            <div class="box-intro">
+            <div class="box-intro" data-color= "#542437">
                 <h1 class = "section-heading">Notable Projects</h1>
                   <div class = "hr"></div>
               </div>
@@ -236,64 +242,70 @@
                 <div class="row project-row">
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <figure class ="effect">
-                          <img src = "http://placekitten.com/391/288"/>
+                          <img src = "img/digitate.jpg"/>
                           <div class="mask">
                           </div>
                     </figure>
                   </div>
 
                   <div class="col-md-6 col-sm-12 col-xs-12">
-                      <figure class = "effect">
                         <div class = "description">
-                          <p>Half Full (2014): Using Python, Flask, HTML5, Sass/Bourbon, JavaScript, Flask, and SQLAlchemy, as well as APIs from Foursquare, Instagram, and Google Maps, Half Full helps end users find bars, restaurants, and cafes that are not busy. Built independently as a Hackbright final project over the course of four weeks.</p>
+                          <p>digiTATE is a one-page art history exploration app based on open-source data. Built from start to finish by creating an internal API & custom front-end framework. Completed independantly over four weeks as Hackbright capstone project.</p>
+                          <h5>Python, Flask, Javascript, Jquery/Ajax, SQLAlchemy, PostgreSQL, CSS3, HTML5</h5>
                         </div>
-                            <div class = "mask"></div>
-                      </figure>
                   </div>
-                </div><!-- row -->
+                </div>
 
                 <div class="row project-row">
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <figure class = "effect">
-
-                      <img src = "img/Spears_1.jpg">
+                      <img src = "img/Spears_2.2.jpg">
+                      <div class = "mask">
+                      </div>
                     </figure>
                   </div>
 
                   <div class="col-md-6 col-sm-12 col-xs-12">
-                    <figure class = "effect">
-                      <img src = "img/Pascal.jpg">
-                    </figure>
+                      <div class = "description">
+                         <p>Spears Perry is a Twitter bot that uses n-gram Markov Chains to generate tweets based on Britney Spear's lyrics and pirate shanties. Because fun.</p>
+                         <h5>Python,Twitter API</h5>
+                      </div>
                   </div>
                 </div><!--row-->
 
                 <div class="row project-row">
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <figure class = "effect">
-
-                      <img src = "img/Spears_1.jpg">
+                      <img src = "img/Pascal.jpg">
+                      <div class = "mask">
+                      </div>
                     </figure>
                   </div>
 
                   <div class="col-md-6 col-sm-12 col-xs-12">
-                    <figure class = "effect">
-                      <img src = "img/Pascal.jpg">
-                    </figure>
+                    <div class="description">
+                      <p>A photo-booth style web-app that surprises un-suspecting participants with an arduino-powered jump scare. An electronic imp microcontroller then posts the photo online via the Twitter API. Prize-Winning team project from Silicon Chef Hackathon
+                      </p>
+                      <h5>Javascript, Python, PHP, HTML/CSS, Twitter API</h5>
+
+                    </div>
                   </div>
                 </div><!--row-->
 
                 <div class="row project-row">
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <figure class = "effect">
-
                       <img src = "img/Spears_1.jpg">
+                      <div class = "mask">
+                      </div>
                     </figure>
                   </div>
 
                   <div class="col-md-6 col-sm-12 col-xs-12">
-                    <figure class = "effect">
-                      <img src = "img/Pascal.jpg">
-                    </figure>
+                      <div class="description">
+                        <p>custom website design and development for dental office</p>
+                        <h5>Resonsive design, mobile, bootstrap</h5>
+                      </div>
                   </div>
                 </div><!--row-->
 
@@ -303,10 +315,16 @@
 
     <div class="anchor" id = "contact"></div>
 
-    <div class="box" data-color="#53777A"><span>Plumage</span>
+    <div class="box"<span>Plumage</span>
+      <div class="box-intro"  data-color="#53777A">
+
+      </div>
     </div>
 
-    <div class="box" data-color="#e0f625"><span>EXTRA!!</span>
+    <div class="box"<span>EXTRA!!</span>
+      <div class="box-intro" data-color="#e0f625">
+
+      </div>
     </div>
 
 </div>
