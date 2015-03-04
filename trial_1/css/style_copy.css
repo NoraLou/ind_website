@@ -265,7 +265,7 @@ box-shadow:0px 0px 4px rgba(0,0,0,0.4);
   letter-spacing: 1px;
   font-weight:200px;
   transition: all 0.2s linear;
-
+  -webkit-transition: all 0.2s linear;
 }
 
 .mask:hover{
@@ -302,9 +302,71 @@ figure.effect:hover img{
 
 /**************************************************************Contact section*/
 
-.contact-list{
-  list-style: none;
+.contact-container{
+  padding:0px 40px;
+  font-size: 16px;
 }
+
+.contact-list{
+  display:inline-   block;
+  margin:auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hr-contact{
+  display:block;
+  height: 3px;
+  background-color:black;
+  width: 90%;
+  margin:40px auto 20px auto;
+}
+.hr-contact:last-of-type{
+  margin-bottom: 60px;
+}
+
+.contact{
+  padding-top: 40px;
+}
+
+.contact-list li{
+  margin-top: 5%;
+}
+
+.contact-list a{
+  display:block;
+  text-decoration: none;
+  color:grey;
+}
+
+.contact-list img{
+  padding-right: 10px;
+  width: 50px;
+  opacity: .5;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+
+.contact-list img:hover{
+  opacity:1;
+  width:60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .magnolia {
   background-color: #ECD078;
