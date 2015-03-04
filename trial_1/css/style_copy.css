@@ -181,6 +181,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
+  font-weight: 300px;
 
 }
 
@@ -208,15 +209,42 @@ body {
 .container {
   max-width: 1280px;
   width:95%;
-  padding: 40px 180px;
+  /*padding: 40px 180px;*/
   background-color: #fff;
 
 }
 
 .project-row{
-  padding-bottom: 8%;
-  padding-top: 8%;
-  border-bottom: solid black 3px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+
+}
+
+.project-row:last-of-type{
+  margin-bottom: 80px;
+}
+
+.effect .pop-out{
+  position:absolute;
+  top:0;
+  right:0;
+  width: 50px;
+  height:50px;
+  background-color:grey;
+  z-index:4;
+}
+
+.span{
+  display:inline-block;
+  margin:auto
+
+}
+
+.glyphicon-new-window{
+  color:white;
+  width: 600%;
+  margin-top: 17px;
+  margin-left:17px;
 }
 
 .effect img {
@@ -224,13 +252,6 @@ max-width: 100%;
 box-shadow:0px 0px 4px rgba(0,0,0,0.4);
 }
 
-.description{
-  padding-top: 5%;
-  padding-left: 5%;
-  display :inline-block;
-  margin:auto;
-
-}
 
 .mask {
   opacity:0;
@@ -241,12 +262,19 @@ box-shadow:0px 0px 4px rgba(0,0,0,0.4);
   height:100%;
   background-color: #781155;
   color:#fff;
-  transition: all 0.4s ease-in-out;
+  letter-spacing: 1px;
+  font-weight:200px;
+  transition: all 0.2s linear;
+
 }
 
-
 .mask:hover{
-  opacity:1;
+  opacity:.65;
+}
+
+.mask-content{
+  padding: 3%;
+
 }
 
 figure.effect {
@@ -259,14 +287,24 @@ figure.effect {
 
 }
 
+.hr-mask{
+  height:3px;
+  background-color:#fff;
+  margin-bottom: 3%;
+}
+
 figure.effect:hover img{
   opacity: 0.05;
   border: solid 5px;
 }
 
-/*********************************************__________PROJECT- HOVER-EFFECT*/
 
 
+/**************************************************************Contact section*/
+
+.contact-list{
+  list-style: none;
+}
 
 .magnolia {
   background-color: #ECD078;
