@@ -30,7 +30,7 @@ var Dymtro = (function () {
         return
       } else if (currentColor !== elementColor) {
         currentColor = elementColor;
-        requestAnimationFrame( api.changeBodyClass() );
+        api.changeBodyClass();
       }
     });
   };

@@ -1,7 +1,7 @@
 body {
   background-color: black;
-  -webkit-transition: background-color 0.8s ease-out;
-  transition: background-color 0.8s ease-out;
+  -webkit-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out;
   font-family: font-family: 'Open-Sans', sans-serif;
 }
 
@@ -23,8 +23,8 @@ body {
   width: 100%;
   position:fixed;
   z-index:9;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 .navbar-default{
@@ -32,9 +32,7 @@ body {
   max-width: 1280px;
   width:95%;
   margin:0 auto 0 auto;
-/*  width:100%;*/
-  /*position:fixed;
-  z-index:9;*/
+
 }
 
 
