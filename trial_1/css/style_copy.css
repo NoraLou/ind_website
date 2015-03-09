@@ -165,7 +165,12 @@ body {
   letter-spacing: 1px;
 }
 
-
+.dates{
+  color: grey;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 12px;
+}
 
 .col-md-8 h3{
   padding-left: 30px;
@@ -173,7 +178,6 @@ body {
 
 .job-bullets{
   list-style: square inside none;
-
   margin-left:none;
   padding-left: none;
 }
@@ -371,6 +375,7 @@ figure.effect:hover img{
    width: 100%;
    letter-spacing: 2px;
    text-transform: uppercase;
+   padding-bottom: 50px;
 }
 
 .built-by {
