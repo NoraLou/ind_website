@@ -11,20 +11,6 @@ function resizeLanding() {
   }).resize();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var Dymtro = (function () {
   var api = {};
   var $boxes = null;
@@ -55,6 +41,8 @@ var Dymtro = (function () {
   };
 
   api.changeBodyClass = function( ) {
+    // $parent = document.querySelectorAll('.parent');
+    // $parent.style.backgroundColor = currentColor;
     document.body.style.backgroundColor = currentColor;
   };
 

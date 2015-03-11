@@ -1,5 +1,5 @@
 body {
-  background-color: transparent;
+  background-color: black;
   -webkit-transition: background-color 0.4s ease-out;
   transition: background-color 0.4s ease-out;
   font-family: font-family: 'Open-Sans', sans-serif;
@@ -21,7 +21,7 @@ body {
 .navbar-custom{
   background-color: black;
   padding-top: 20px;
-  z-index: 9;
+  z-index: 100;
 }
 
 .navbar-container{
@@ -75,26 +75,26 @@ body {
 #landing-box {
 
   text-align: center;
-  background:yellow;
-  height:auto;
+  background: no-repeat center url(../img/resized-computers.jpg);
+
+  -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
   max-width: 1280px;
-  width: 95%;
   margin-right:auto;
   margin-left:auto;
-  margin-top: 20px;
- /* margin-bottom: 5%;*/
 }
 
-#landing-img{
+/*#landing-img{
   width:100%;
-  max-width:1280px;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  max-width:1280x;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
-}
+}*/
 
 .anchor{
   height: 80px;
