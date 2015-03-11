@@ -1,12 +1,31 @@
-var frontPage = function (){
+$(document).ready(function() {
+  Dymtro.init();
+  resizeLanding();
+
+});
 
 
+function resizeLanding() {
+  $(window).resize(function(){
+    $("#landing-box").height($(window).height())
+  }).resize();
 }
 
 
 
-var Dymtro = (function () {
 
+
+
+
+
+
+
+
+
+
+
+
+var Dymtro = (function () {
   var api = {};
   var $boxes = null;
   var watchers = [];
@@ -43,6 +62,3 @@ var Dymtro = (function () {
 
 })();
 
-$(document).ready(function() {
-  Dymtro.init();
-});
