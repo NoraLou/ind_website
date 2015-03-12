@@ -16,13 +16,22 @@ body {
 }
 
 /*************************************************************************NEW STYLES */
+.top-nav-collapse{
+  background-color: white;
+  color:black;
+}
+
 
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+   /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     background-color: #000;
+}
+
+.navbar-custom>.container{
+  background-color:transparent;
 }
 
 .navbar-custom .navbar-brand {
@@ -83,6 +92,32 @@ body {
     color: #fff;
 }
 
+
+:-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -103,62 +138,6 @@ body {
 
 
 
-
-/*.navbar-custom{
-  background-color: black;
-  position:fixed;
-  top:0;
-  z-index: 100;
-}
-
-.navbar-container{
-  background-color: black;
-  width: 100%;
-  padding-right: 35px;
-  padding-left: 35px;
-  padding-top: 10px;
-}
-
-.navbar-default{
-  background-color: black;
-  max-width: 1280px;
-  width:95%;
-  margin:0 auto 0 auto;
-
-}
-
-
-.navbar-default .navbar-toggle {
-  border-color: #34ADD4 ;
-  border-width: 2px;
-}
-
-.navbar-default .navbar-toggle .icon-bar{
-  background-color: #34ADD4 !important;
-
-}
-
-.personal {
-  color: #34ADD4 !important;
-
-}
-
-.my-main-nav>li{
-  color:#34ADD4;
-}
-
-.my-social-nav ul li{
-  list-style: none;
-  display: inline-block;
-  margin-right: 10px;
-
-}
-
-.my-social-nav img{
-  width: 25px;
-}
-
-*/
 
 
 
