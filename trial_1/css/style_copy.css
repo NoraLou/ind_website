@@ -5,9 +5,6 @@ body {
   font-family: font-family: 'Open-Sans', sans-serif;
 }
 
-.header{
-  background-color: black;
-}
 
 .parent {
   background-color: transparent;
@@ -18,9 +15,99 @@ body {
   margin-bottom:0px;
 }
 
-.navbar-custom{
+/*************************************************************************NEW STYLES */
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 8;
+    font-weight: 400;
+}
+.navbar-custom .navbar-brand>span{
+  padding:3px;
+  border: solid 2px black;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+
+
+
+/*.navbar-custom{
   background-color: black;
-  padding-top: 20px;
+  position:fixed;
+  top:0;
   z-index: 100;
 }
 
@@ -71,10 +158,13 @@ body {
   width: 25px;
 }
 
+*/
+
+
 
 #landing-box {
 
-  text-align: center;
+ /* text-align: center;*/
   background: no-repeat center url(../img/resized-computers.jpg);
 
   -webkit-background-size: 100%;
@@ -82,19 +172,33 @@ body {
     -o-background-size: 100%;
     background-size: 100%;
 
-  max-width: 1280px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin-bottom: 0px;
+  padding: 0px;
+
+
+  /*max-width: 1280px;
   margin-right:auto;
-  margin-left:auto;
+  margin-left:auto;*/
 }
 
-/*#landing-img{
-  width:100%;
-  max-width:1280x;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+.landing-wrapper{
+  position:relative;
+  top:28%;
+  z-index:4;
+  text-align: center;
+  color: #fff;
+}
 
-}*/
+
+
 
 .anchor{
   height: 80px;
@@ -417,9 +521,12 @@ figure.effect:hover img{
 /***********************CHANGE CONTENT PADDING ON IPHONE WINDOWS PHONE*/
 
 
-@media only screen and (min-width: 991px) {
-  .box .contact{
-
+@media (min-width: 931px) {
+  .parent{
+      overflow:hidden;
+  }
+  .landing-box{
+    overflow:hidden;
   }
 
 

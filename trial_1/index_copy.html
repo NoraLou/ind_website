@@ -4,55 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
   <title>Nora Humpage</title>
+
   <link href = "css/bootstrap.css" rel = "stylesheet">
   <link rel="stylesheet" href="css/style_copy.css" media="screen" type="text/css"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class= "navbar-container">
-      <div class="navbar-default">
+  <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
 
-          <div class="navbar-header page-scroll">
+           <div class="navbar-default">
 
-            <button type="button" class="navbar-toggle collapsed personal" data-toggle="collapse" data-target="#myMainNav">
-                <span class="sr-only personal">Toggle navigation</span>
-                <span class="icon-bar personal"></span>
-                <span class="icon-bar personal"></span>
-                <span class="icon-bar personal"></span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home">HOME</a>
-          </div>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span>Nora Humpage</span>
+                </a>
+            </div><!-- navbar-header -->
 
-
-          <div class="collapse navbar-collapse" id = "myMainNav">
-            <ul class="nav navbar-nav pull-right">
-               <li><a class="personal" href = "#say-hi">Say Hi</a></li>
-               <li><a class="personal" href = "#projects">Projects</a></li>
-               <li class= "personal dropdown">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#say-hi">Say Hi</a>
+                    </li>
+                  <li class= "personal dropdown">
                   <a href="#" class=" personal dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Professional Me <span class="personal caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a class = "personal" href = "#experience">Experience</a></li>
-                    <li><a class = "personal" href = "#education">Education</a></li>
-                  </ul>
-               <li><a class="personal" href = "#contact" >Contact</a></li>
-            </ul>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a class = "personal" href = "#experience">Experience</a></li>
+                      <li><a class = "personal" href = "#education">Education</a></li>
+                    </ul>
+                  </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
           </div>
-       </div>
-      </div>
+        </div><!-- /.container -->
     </nav>
 
 
+<div class = "box-intro" id = "home" data-color="#000"></div>
 
-    <div class = "box-intro" id = "home" data-color="#000"></div>
+<div id="landing-box">
+    <div class="landing-wrapper">
+          <h1>Pascal  van Gemert</h1>
+          <p class="lead">Interactive resume</p>
 
-      <div id="landing-box">
-       <!--  <img id = "landing-img" src ="img/computers.jpg"> -->
-      </div>
+          <a href="#say-hi" class="scroll-down">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+    </div>
+</div>
 
 
 
@@ -425,6 +448,7 @@
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/scrollMonitor.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>
