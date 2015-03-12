@@ -5,6 +5,10 @@ body {
   font-family: font-family: 'Open-Sans', sans-serif;
 }
 
+body #page-top{
+  background-color: white;
+}
+
 
 .parent {
   background-color: transparent;
@@ -24,13 +28,13 @@ body {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+  /*  border-bottom: 1px solid rgba(255,255,255,.3);*/
     text-transform: uppercase;
    /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    background-color: #000;
+    background-color: white;
 }
 
-.navbar-custom>.container{
+.navbar-custom .container{
   background-color:transparent;
 }
 
@@ -120,7 +124,7 @@ body {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 20px 0;
+        padding: 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -132,18 +136,11 @@ body {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
+        }
 }
 
 
-
-
-
-
 #landing-box {
-
- /* text-align: center;*/
   background: no-repeat center url(../img/resized-computers.jpg);
 
   -webkit-background-size: 100%;
@@ -159,13 +156,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 
-  margin-bottom: 0px;
+  margin-top: -2%;
+
   padding: 0px;
 
-
-  /*max-width: 1280px;
-  margin-right:auto;
-  margin-left:auto;*/
 }
 
 .landing-wrapper{

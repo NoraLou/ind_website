@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".navbar-fixed-top").css('backgroundColor',"white");
+        $(".navbar-fixed-top").css('backgroundColor',"#f8f8f8");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $(".navbar-fixed-top").css('backgroundColor',"transparent");
@@ -14,9 +14,19 @@ $(document).ready(function() {
 });
 
 
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
-
-
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
 
 
 
@@ -59,8 +69,6 @@ var Dymtro = (function () {
   };
 
   api.changeBodyClass = function( ) {
-    // $parent = document.querySelectorAll('.parent');
-    // $parent.style.backgroundColor = currentColor;
     document.body.style.backgroundColor = currentColor;
   };
 
