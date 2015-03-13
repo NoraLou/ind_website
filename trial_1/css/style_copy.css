@@ -135,7 +135,7 @@ body {
 
 
 #landing-box {
-  background: no-repeat center url(../img/resized-computers.jpg);
+  background: no-repeat center url(../img/color-computers-150-dpi.jpg);
 
   -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -158,19 +158,41 @@ body {
 
 .landing-wrapper{
   position:relative;
-  top:28%;
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  top:17%;
+  height:70%;
   z-index:4;
   text-align: center;
-  color: #f8f8f8;
-  background-color: yellow;
+  color: black;
+  background-color: rgba(248,248,248,0.6);
+  width:85%;
+  max-width: 1280px;
+}
+
+.landing-content{
+  position:absolute;
+  top:15%;
+  right:15%;
+  left:15%;
+  width: 70%;
+  background-color:rgba(248,248,248,0.6);
+}
+
+.landing-content h1{
+
+
 }
 
 .landing-wrapper .glyphicon-chevron-down{
-  background-color: black;
+  background-color:#031a6b ;
   padding:20px;
   color:white;
   font-size: 30px;
   width:100px;
+  postion:absolute;
+  top:80%;
 }
 
 
