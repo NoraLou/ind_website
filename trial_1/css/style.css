@@ -5,11 +5,6 @@ body {
   font-family: font-family: 'Open-Sans', sans-serif;
 }
 
-body #page-top{
-  background-color: white;
-}
-
-
 .parent {
   background-color: transparent;
   height: 100%;
@@ -98,7 +93,6 @@ body #page-top{
 ::selection {
     text-shadow: none;
     background: ##d4d2d2;
-    /*background: rgba(255,255,255,.2);*/
     color:black;
 }
 
@@ -116,10 +110,8 @@ body {
 
 
 
-
-
 #landing-box {
-  background: no-repeat center url(../img/color-computers-150-dpi.jpg);
+  background: no-repeat left url(../img/color-computers-72-dpi.jpg);
 
   -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -189,28 +181,10 @@ body {
   color:white;
   font-size: 30px;
   width:100px;
-  postion:absolute !important;
+  postion:absolute;
   top:80%;
 
 }
-
-
- /*.glyphicon-chevron-down{
-  background-color:black;
-  padding:20px;
-  color:#f8f8f8;
-  font-size: 40px;
-  height:10%;
-  text-align: center;
-  display: block;
-  position: absolute;
-  top:85%;
-  z-index: 999;
-  right:40%;
-  width:20%;
-}
-*/
-
 
 .anchor{
   height: 80px;
@@ -526,9 +500,6 @@ figure.effect:hover img{
 
 
 
-
-
-
 /**************************************************************************Tablets*/
 @media (max-width:991px){
   .contact-list{
@@ -591,6 +562,7 @@ figure.effect:hover img{
 
 }
 
+/***************************************************************************************Mobile*/
 
 
 @media only screen and (max-width: 480px){
@@ -635,14 +607,16 @@ figure.effect:hover img{
 
 }
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px)
-and (orientation : landscape) {
-    .landing-content{
+@media only screen and (orientation: landscape) and (max-width: 568px) {
+  .landing-content{
       top: 0;
     }
+
+
+
 }
+
+
 
 
 
