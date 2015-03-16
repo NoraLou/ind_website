@@ -134,7 +134,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 
-  margin-top: -2%;
+  margin-top: -1%;
 
   padding: 0px;
 
@@ -161,6 +161,7 @@ body {
   right:15%;
   left:15%;
   width: 70%;
+  text-align: center;
 }
 
 .landing-content h1{
@@ -182,16 +183,33 @@ body {
 
 }
 
-.landing-wrapper .glyphicon-chevron-down{
+ .glyphicon-chevron-down{
   background-color:black;
   padding:20px;
   color:white;
   font-size: 30px;
   width:100px;
-  postion:absolute;
+  postion:absolute !important;
   top:80%;
+
 }
 
+
+ /*.glyphicon-chevron-down{
+  background-color:black;
+  padding:20px;
+  color:#f8f8f8;
+  font-size: 40px;
+  height:10%;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top:85%;
+  z-index: 999;
+  right:40%;
+  width:20%;
+}
+*/
 
 
 .anchor{
@@ -460,13 +478,7 @@ figure.effect:hover img{
   height: 3px;
   background-color:black;
   width:90%;
-
-  /*margin:40px auto 40px auto;*/
 }
-/*.hr-contact:last-of-type{
-  margin:60px auto 60px auto;
-  width:97%;
-}*/
 
 .contact{
   padding-top: 40px;
@@ -527,7 +539,6 @@ figure.effect:hover img{
   .contact-container{
     display:block;
     margin:auto;
-   /* padding:2%;*/
   }
 
 }
@@ -551,6 +562,27 @@ figure.effect:hover img{
 
 }
 
+
+@media only screen and (max-width: 768px){
+    .landing-box{
+      background-attachment: scroll;
+    }
+
+    .landing-content h1{
+      font-size: 35px;
+    }
+    .landing-content h2{
+      font-size: 20px;
+    }
+    .landing-content p{
+      font-size: 16px
+    }
+    .landing-content>.hr{
+      margin-bottom: 5%;
+    }
+
+}
+
 @media only screen and (max-width:650px){
   .cv-row{
     padding-right: 0px;
@@ -569,6 +601,22 @@ figure.effect:hover img{
     padding:5%;
   }
 
+  .mask-content h3 {
+    font-size:14px;
+    margin:2px;
+  }
+
+  .mask-content p{
+    font-size: 12px;
+    font-weight: 400;
+
+  }
+  .mask-content h5{
+    font-size: 12px;
+  }
+  .hr-mask{
+    height:1px;
+  }
 }
 
 @media only screen and (max-width: 360px){
@@ -578,8 +626,31 @@ figure.effect:hover img{
   .contact-container{
     font-size: 12px;
   }
+  .landing-content{
+    top:2%;
+  }
+  .glyphicon-chevron-down{
+    bottom:90%;
+  }
 
 }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+    .landing-content{
+      top: 0;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
