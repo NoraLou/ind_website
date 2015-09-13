@@ -73,7 +73,15 @@ body {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: white;
+}
+
+.top-nav-collapse  .navbar-nav .page-scroll{
+    color:black;
+}
+
+.top-nav-collapse a.navbar-brand.page-scroll{
+    color:black;
 }
 
 .navbar-custom .nav li a {
@@ -120,10 +128,10 @@ body {
     }
 
     .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #03103e;
-    }
+       padding: 0;
+       background: #f8f8f8;
+       box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+
 }
 
 
@@ -222,13 +230,13 @@ body {
 }*/
 
 
-:-moz-selection {
+/*:-moz-selection {
     text-shadow: none;
     background: #d4d2d2;
 
 }
-
-::selection {
+*/
+/*::selection {
     text-shadow: none;
     background: ##d4d2d2;
     color:black;
@@ -245,7 +253,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-
+*/
 
 
 #landing-box {
