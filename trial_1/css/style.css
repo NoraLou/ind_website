@@ -49,7 +49,6 @@ body {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #03103e;
     color:#fff;
 }
 
@@ -61,23 +60,20 @@ body {
     outline: 0;
 }
 
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: #fff;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
-
 .navbar-custom a {
-    color: #fff;
+    color: transparent;
+}
+
+.top-nav-collapse .navbar-custom{
+  background-color: #fff;
 }
 
 .top-nav-collapse  .navbar-nav .page-scroll{
     color:black;
+}
+
+.top-nav-collapse  .navbar-nav .page-scroll :hover{
+    color:blue;
 }
 
 .top-nav-collapse a.navbar-brand.page-scroll{
@@ -87,6 +83,7 @@ body {
 
 
 .navbar-custom .nav li a {
+    background-color: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -94,31 +91,6 @@ body {
 
 
 
-.navbar-custom .nav li a:hover {
-    outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
-}
-
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-    outline: 0;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li.active {
-    outline: 0;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: #fff;
-}
-
-/*all widths above tablet/mobile styles*/
 
 @media(min-width:768px) {
     .navbar-custom {
@@ -140,99 +112,34 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.top-nav-collapse{
-  background-color: white;
-  color:black;
-}
-
-
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
-    background-color: #f8f8f8;
-}
-
-.navbar-custom>.container{
-  background-color:transparent;
-}
-
-.navbar-custom .navbar-brand {
-    font-size: 7;
-    font-weight: 300;
-}
-.navbar-custom .navbar-brand>span{
-  padding:3px;
-  border: solid 1px black;
-}
-
-.navbar-custom .navbar-brand:focus {
-    outline: 0;
-}
-
-
-.navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
-    font-size: 16px;
-    color: grey;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
-}
-
-
-.navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover {
-    outline: 0;
-    color:black;
+@media(max-width:768px){
+  .navbar-custom{
     background-color: white;
-}
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+  }
+  .navbar-collapse{
+    border-top: 1px solid black;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+  }
 
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-    outline: 0;
-    background-color: #d4d2d2;
-}
+  a.navbar-brand.page-scroll{
+    color:black;
+  }
 
-.navbar-custom .nav li.active a {
-    background-color: #d4d2d2;
-}
+  button.nabar-toggle{
+    color:yellow;
+  }
 
-.navbar-custom .nav li.active a:hover {
-    color: black;
-}*/
+  i.fa.fa-bars{
+    color:black;
+  }
+  .navbar-collapse a.page-scroll{
+    color:black;
+  }
+
+
+}
 
 
 :-moz-selection {
@@ -492,15 +399,11 @@ body {
 .container {
   max-width: 1280px;
   width:95%;
-  /*padding: 40px 180px;*/
-  /*background-color: #f8f8f8;*/
-
 }
 
 .project-row{
   padding-bottom: 2%;
   padding-top: 2%;
-
 }
 
 .project-row:last-of-type{
@@ -664,26 +567,6 @@ figure.effect:hover img{
   }
 
 }
-
-
-/*@media (min-width:768px) {
-    .navbar-custom {
-        padding: 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 0;
-        }
-
-}
-*/
 
 @media only screen and (max-width: 768px){
     .landing-box{
