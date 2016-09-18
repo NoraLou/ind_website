@@ -1,18 +1,6 @@
 $(document).ready(function() {
   Dymtro.init();
   resizeLanding();
-
-    // $(window).scroll(function() {
-    //   if ($(".navbar").offset().top > 50) {
-    //       $(".navbar-fixed-top").addClass("top-nav-collapse");
-    //       $(".navbar-fixed-top").css('backgroundColor',"#f8f8f8");
-    //   } else {
-    //       $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    //       $(".navbar-fixed-top").css('backgroundColor',"transparent");
-    //   }
-    // });
-
-
     $(function() {
         $('a.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
@@ -28,8 +16,6 @@ $(document).ready(function() {
     });
 
 });
-
-
 
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
@@ -57,9 +43,7 @@ var Dymtro = (function () {
 
     for (var i = 0; i < $boxes.length; i++) {
       watchers.push = api.createWatcher( $boxes[i] );
-      console.log(watchers);
     }
-
   };
 
   api.createWatcher = function( element ) {
