@@ -239,7 +239,6 @@ body {
   color:white;
   font-size: 30px;
   width:100px;
-  postion:absolute;
   top:80%;
 
 }
@@ -299,14 +298,14 @@ body {
   margin-top: 7px;
   text-align: left;
   padding-left: 30px;
-  font-weight: 300;
+  font-weight: 440;
   font-size:14px;
 }
 .about-me-intro{
   line-height: 2;
   margin-top: 7px;
   text-align: left;
-  font-weight: 300;
+  font-weight: 440;
   font-size:14px;
   padding-bottom: 100px;
 }
